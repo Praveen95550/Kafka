@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.kafka</groupId>
-	<artifactId>Kafka_Consumer</artifactId>
+	<artifactId>Kafka_Producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>KafkaProducerAPI</name>
 	<description>Demo project for Spring Boot Kafka Producer</description>
@@ -49,6 +49,25 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.22</version>
+			<scope>provided</scope>
+		</dependency>
+    <!-- Jackson core dependency -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.15.2</version> <!-- Use the latest version -->
+    </dependency>
+
+    <!-- Jackson annotations (for annotations like @JsonProperty, etc.) -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.15.2</version> <!-- Use the latest version -->
+    </dependency>
 	</dependencies>
 
 	<build>
